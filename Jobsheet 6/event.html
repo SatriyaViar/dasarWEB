@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #paragraft {
+                width: 600px;
+                height: 80px;
+                background-color: pink;
+                line-height: 80px;
+                text-align: center;
+                font-size: 30px;
+            }
+        </style>
+        <script src="jquery-3.7.1.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#paragraft").css("color","white");
+            
+                $("#paragraft").mouseover(function(){
+                    $("#paragraft").css("background-color","silver");
+                });
+                $("#paragraft").mouseout(function(){
+                    $("#paragraft").css("background-color","blue");
+                });
+                $("#paragraft").dblclick(function(){
+                    $("#paragraft").css("border","solid 3px black");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p id="paragraft">Praktikum Minggu ke -4</p>
+    </body>
+</html>
